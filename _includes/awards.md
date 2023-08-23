@@ -1,6 +1,5 @@
 
-<h2 id="awards" style="margin: 2px 0px -15px;">Awards and Grants</h2>
-<br>
+<h2 id="awards" style="margin: 2px 0px 0px;">Awards and Grants</h2>
 
 <ul style="margin:0 0 5px;">
   <li><autocolor>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</autocolor></li>
