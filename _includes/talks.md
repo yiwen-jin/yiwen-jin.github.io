@@ -1,4 +1,4 @@
-<h2 id="talks" style="margin: 2px 0px 20px;">Conference Presentations</h2>
+<h2 id="talks" style="margin: 20px 0px 20px;">Conference Presentations</h2>
 
 <ul style="margin:0 0 5px;">
   <li><autocolor>The cost of task switching: Evidence from emergency departments</autocolor></li>
