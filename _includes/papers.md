@@ -14,7 +14,7 @@
     <div class="author"><strong>Yiwen Jin</strong>, Yige Duan, Yichuan Ding, Mahesh Nagarajan, Garth Hunte</div>
     <div class="periodical"><em>under review, M&SOM</em></div>
       -- <strong>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</strong><br>
-      -- <strong>Winner, 2021 CORS Healthcare SIG Best Paper in Statistical Methods/Econometric Modelling</strong>
+      -- <strong>Winner, 2021 CORS Healthcare SIG Best Paper in Statistical/Econometric Modelling</strong>
   </div>
 </div>
 </li>  
