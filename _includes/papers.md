@@ -11,7 +11,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3756677">The cost of task switching: Evidence from emergency departments</a></div>
+    <div class="title">[1]. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3756677">The cost of task switching: Evidence from emergency departments</a></div>
     <div class="author"><strong>Yiwen Jin</strong>, Yige Duan, Yichuan Ding, Mahesh Nagarajan, Garth Hunte</div>
     <div class="periodical"><em>under review, M&SOM</em></div>
       -- <strong>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</strong><br>
@@ -25,7 +25,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4048352">Adaptive server behavior to deviations in schedules and its consequences: Evidence from operating rooms</a></div>
+    <div class="title">[2]. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4048352">Adaptive server behavior to deviations in schedules and its consequences: Evidence from operating rooms</a></div>
     <div class="author"><strong>Yiwen Jin</strong>, Yichuan Ding, Steven Shechter, Jugpal Arneja</div>
     <div class="periodical"><em>Major revision, M&SOM</em></div>
       -- <strong>Third Place, 2023 POMS China Best Student Paper Award</strong><br>
