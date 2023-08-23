@@ -14,10 +14,10 @@ My CV can be found [here](assets/files/yiwen_cv.pdf).
 
 {% include_relative _includes/papers.md %}
 
-{% include_relative _includes/awards.md %}
-
 {% include_relative _includes/teaching.md %}
 
 {% include_relative _includes/talks.md %}
+
+{% include_relative _includes/awards.md %}
 
 {% include_relative _includes/services.md %}
