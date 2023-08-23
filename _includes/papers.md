@@ -10,7 +10,7 @@
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3756677">The cost of task switching: Evidence from emergency departments</a></div>
+    <div class="title">1.<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3756677">The cost of task switching: Evidence from emergency departments</a></div>
     <div class="author"><strong>Yiwen Jin</strong>, Yige Duan, Yichuan Ding, Mahesh Nagarajan, Garth Hunte</div>
     <div class="periodical"><em>under review, M&SOM</em></div>
       -- <strong>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</strong><br>
