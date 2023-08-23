@@ -1,4 +1,4 @@
-<h2 id="teaching" style="margin: 2px 0px 20px;">Teaching</h2>
+<h2 id="teaching" style="margin: 20px 0px 20px;">Teaching</h2>
 
 <h4 style="margin:0 10px 0;">Instructor</h4>  
 <ul style="margin:0 0 5px;">
