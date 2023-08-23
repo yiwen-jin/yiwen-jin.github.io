@@ -1,9 +1,9 @@
-<h2 id="papers" style="margin: 2px 0px -15px;">Research</h2>
+<h2 id="publications" style="margin: 2px 0px -15px;">Research</h2>
 
 <div class="publications">
 <ol class="bibliography">
-  
-<h4 style="margin:0 5px 0;">Papers Under Review</h4>  
+<br>
+<h4 style="margin:0 10px 0;">Papers Under Review</h4>  
   
 <li>
 <div class="pub-row">
@@ -34,7 +34,7 @@
 </li>
 <br> 
   
-<h4 style="margin:0 5px 0;">Accepted Papers</h4>  
+<h4 style="margin:0 10px 0;">Accepted Papers</h4>  
   
 <li>
 <div class="pub-row">
@@ -61,14 +61,14 @@
 </li>
 <br>
   
-<h4 style="margin:0 5px 0;">Working Papers</h4>  
+<h4 style="margin:0 10px 0;">Working Papers</h4>  
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title">Beyond tokenism: The impact of board ethnic diversity on supply chain diversification</div>
-    <div class="author">with Minjia Li, Jenny Li Zhang</div>
+    <div class="author">with Minjia Li</div>
     <div class="periodical"><em>Manuscript under preparation</em></div>
       -- <strong>Winner of $5,000 EDI Catalyst Grant of UBC Sauder School of Business</strong>
   </div>
