@@ -3,7 +3,7 @@
 <div class="publications">
 <ol class="bibliography">
   
-<h4 style="margin:0 10px 0;">Papers Under Review</h4>  
+<h4 style="margin:0 5px 0;">Papers Under Review</h4>  
   
 <li>
 <div class="pub-row">
@@ -34,7 +34,7 @@
 </li>
 <br> 
   
-<h4 style="margin:0 10px 0;">Accepted Papers</h4>  
+<h4 style="margin:0 5px 0;">Accepted Papers</h4>  
   
 <li>
 <div class="pub-row">
@@ -61,7 +61,7 @@
 </li>
 <br>
   
-<h4 style="margin:0 10px 0;">Working Papers</h4>  
+<h4 style="margin:0 5px 0;">Working Papers</h4>  
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
