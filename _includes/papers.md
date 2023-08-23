@@ -1,6 +1,8 @@
 <h2 id="papers" style="margin: 2px 0px 0px;">Research</h2>
+
 <div class="publications">
 <ol class="bibliography">
+  
 <h4 style="margin:0 10px 0;">Papers Under Review</h4>  
   
 <li>
