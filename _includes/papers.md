@@ -2,7 +2,7 @@
 
 <div class="publications">
   
-<ol class="bibliography">
+<ol>
 
 <h4 style="margin:0 10px 0;">Papers Under Review</h4>  
   
