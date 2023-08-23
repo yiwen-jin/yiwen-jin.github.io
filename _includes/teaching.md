@@ -1,4 +1,5 @@
-## Teaching
+<h2 id="teaching" style="margin: 2px 0px 20px;">Teaching</h2>
+
 <h4 style="margin:0 10px 0;">Instructor</h4>  
 <ul style="margin:0 0 5px;">
   <li><autocolor>Instructor of COMM 204 Logistics and Operations Management, UBC Sauder School of Business</autocolor></li>
