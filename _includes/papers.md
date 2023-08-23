@@ -32,7 +32,6 @@
   </div>
 </div>
 </li>
-<br> 
   
 <h4 style="margin:0 10px 0;">Accepted Papers</h4>  
   
@@ -59,7 +58,6 @@
   </div>
 </div>
 </li>
-<br>
   
 <h4 style="margin:0 10px 0;">Working Papers</h4>  
 <li>
