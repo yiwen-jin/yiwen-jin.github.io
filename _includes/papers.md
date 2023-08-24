@@ -67,7 +67,7 @@
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title">[5]. Beyond tokenism: The impact of board ethnic diversity on supply chain diversification</div>
-    <div class="author">with Minjia Li</div>
+    <div class="author">with Minjia Li, Jenny Li Zhang</div>
     <div class="periodical"><em>Manuscript under preparation</em></div>
       -- <strong>Winner of $5,000 EDI Catalyst Grant of UBC Sauder School of Business</strong>
   </div>
