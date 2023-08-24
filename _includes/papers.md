@@ -41,7 +41,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title"><a href="https://journals.sagepub.com/doi/10.1177/2292550319880921">High-risk plastic surgery: An analysis of 108,303 cases from the American College of Surgeons National Surgical Quality Improvement Program (ACS NSQIP)</a></div>
+    <div class="title">[3]. <a href="https://journals.sagepub.com/doi/10.1177/2292550319880921">High-risk plastic surgery: An analysis of 108,303 cases from the American College of Surgeons National Surgical Quality Improvement Program (ACS NSQIP)</a></div>
     <div class="author">Wan, M., Zhang, J.X., Ding, Y., <b>Jin, Y.</b>, Bedford, J., Nagarajan, M., Bucevska, M., Courtemanche, D.J. and Arneja, J.S.</div>
     <div class="periodical"><em>Plastic Surgery</em>, 28(1), pp.57-66.</div>
   </div>
@@ -53,7 +53,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7209891/">Do microsurgical outcomes differ based on which specialty does the operation? A NSQIP analysis</a></div>
+    <div class="title">[4]. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7209891/">Do microsurgical outcomes differ based on which specialty does the operation? A NSQIP analysis</a></div>
     <div class="author">Zhang, J.X., Wan, M., Ding, Y., <b>Jin, Y.</b>, Nagarajan, M., Courtemanche, D.J., Bedford, J. and Arneja, J.S.</div>
     <div class="periodical"><em>Plastic and Reconstructive Surgery Global Open</em>, 8(4).</div>
   </div>
@@ -66,7 +66,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">Beyond tokenism: The impact of board ethnic diversity on supply chain diversification</div>
+    <div class="title">[5]. Beyond tokenism: The impact of board ethnic diversity on supply chain diversification</div>
     <div class="author">with Minjia Li</div>
     <div class="periodical"><em>Manuscript under preparation</em></div>
       -- <strong>Winner of $5,000 EDI Catalyst Grant of UBC Sauder School of Business</strong>
@@ -79,7 +79,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">When are doctors most needed? Risk-adaptive scheduling in emergency department</div>
+    <div class="title">[6]. When are doctors most needed? Risk-adaptive scheduling in emergency department</div>
     <div class="author">with Yichuan Ding, Garth Hunte</div>
     <div class="periodical"><em>Manuscript under preparation</em></div>
   </div>
@@ -92,7 +92,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">Coping with nurse burnout: Key drivers and operational interventions</div>
+    <div class="title">[7]. Coping with nurse burnout: Key drivers and operational interventions</div>
     <div class="author">with Steven Shechter, Yichuan Ding, Jugpal Arneja</div>
     <div class="periodical"><em>Manuscript under preparation</em></div>
   </div>
