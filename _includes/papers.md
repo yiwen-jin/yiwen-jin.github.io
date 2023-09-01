@@ -79,7 +79,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">[6]. Optimal routing policy for a polling system with switchover times and piecewise linear cost rate</div>
+    <div class="title">[6]. Patient routing in emergency rooms: A polling system with switchover times and piecewise linear cost rate</div>
     <div class="author">with Yichuan Ding, Mahesh Nagarajan</div>
     <div class="periodical"><em>Manuscript under preparation</em></div>
   </div>
