@@ -81,7 +81,7 @@
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title">[6]. Patient routing in emergency rooms: A polling system with switchover times and piecewise linear cost rate</div>
     <div class="author">with Yichuan Ding, Mahesh Nagarajan</div>
-    <div class="periodical"><em>under preparation</em></div>
+    <div class="periodical"><em>In preparation</em></div>
   </div>
 </div>
 </li>
@@ -94,7 +94,7 @@
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title">[7]. Coping with nurse burnout: Key drivers and operational interventions</div>
     <div class="author">with Steven Shechter, Yichuan Ding, Jugpal Arneja</div>
-    <div class="periodical"><em>under preparation</em></div>
+    <div class="periodical"><em>In preparation</em></div>
   </div>
 </div>
 </li>
