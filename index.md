@@ -12,6 +12,8 @@ In the realm of teaching, I have a proven track record in delivering high-qualit
 
 My CV can be found [here](assets/files/yiwen_cv.pdf).
 
+{% include_relative _includes/upcomingtalks.md %}
+
 {% include_relative _includes/papers.md %}
 
 {% include_relative _includes/teaching.md %}
@@ -21,3 +23,6 @@ My CV can be found [here](assets/files/yiwen_cv.pdf).
 {% include_relative _includes/awards.md %}
 
 {% include_relative _includes/services.md %}
+
+
+
