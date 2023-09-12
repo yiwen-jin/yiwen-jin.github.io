@@ -1,4 +1,4 @@
-<h2 id="talks" style="margin: 20px 0px 20px;">Upcoming Talks in the 2023 INFORMS Annual Meeting at Phoenix</h2>
+<h2 id="INFORMS2023" style="margin: 20px 0px 20px;">Upcoming Talks in the 2023 INFORMS Annual Meeting</h2>
 
 <ul style="margin:0 0 5px;">
   <li><autocolor><strong>The cost of task switching: Evidence from emergency departments</strong>strong></autocolor></li>
