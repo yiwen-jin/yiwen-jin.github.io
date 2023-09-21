@@ -4,6 +4,7 @@
 <ul style="margin:0 0 5px;">
   <li><autocolor>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</autocolor></li>
   <li><autocolor>Third Place, 2023 POMS China Best Student Paper Award</autocolor></li>
+  <li><autocolor>Winner, The 18th International Conference on Service Systems and Service Management Best Paper Award</autocolor></li>
   <li><autocolor>Finalist (Top 5), 2023 CORS Healthcare SIG Graduate Student Presentation Competition</autocolor></li>
   <li><autocolor>Winner, 2021 CORS Healthcare SIG Best Paper in Statistical Methods/Econometric Modelling</autocolor></li>
   <li><autocolor>Winner, 2023 UBC Paul Chwelos Memorial Graduate Scholarship of Teaching Excellence</autocolor></li>
