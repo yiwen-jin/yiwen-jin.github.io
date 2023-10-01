@@ -13,3 +13,10 @@
       -- Time: Sunday, October 15, 2023, 2:15 PM - 3:30 PM <br>
       -- Location: CC-North 131 A <br>
 </ul>
+
+<ul style="margin:0 0 5px;">
+  <li><autocolor><strong>Healthcare Delivery Analytics</strong></autocolor></li>
+      -- Session: <a href="https://www.abstractsonline.com/pp8/#!/10856/session/680">MC20 - HAS Job Market Lightning Session</a><br>
+      -- Time: Monday, October 16, 2023, 12:45 PM - 2:00 PM <br>
+      -- Location: CC-North 128 A <br>
+</ul>
