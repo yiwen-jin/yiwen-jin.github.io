@@ -12,7 +12,6 @@ Research interests: healthcare operations management, behavioral queueing, suppl
 
 My CV can be found [here](assets/files/yiwen_cv.pdf). Please feel free to reach out and connect!
 
-{% include_relative _includes/upcomingtalks.md %}
 
 {% include_relative _includes/papers.md %}
 
