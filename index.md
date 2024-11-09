@@ -8,7 +8,7 @@ Hello, and welcome to my website! I earned my Ph.D. in Management Science at the
 
 **Update: I will join the [Haskayne School of Business](https://haskayne.ucalgary.ca/) at the University of Calgary as an assistant professor in July 2024.**
 
-Research interests: healthcare operations management, behavioral queueing, supply chain management. I am passionate about leveraging data-driven methods to facilitate innovative solutions in healthcare delivery processes, from emergency departments to operating rooms. My research has been acknowledged with the [2023 POMS College of Healthcare Operations Management Best Paper Award](https://www.linkedin.com/posts/xin-david-ding-5b5b618_conference-education-poms-activity-7067906007045156864-xIVs?utm_source=share&utm_medium=member_desktop). I am also interested in company diversity, sustainability, supply chain management and open to other fields in the business world. 
+Research interests: healthcare analytics, behavioral queueing, supply chain management. I am passionate about using data-driven methods to enhance healthcare delivery processes and am dedicated to advancing understanding at the intersection of AI and healthcare. My research has been acknowledged with the [2023 POMS College of Healthcare Operations Management Best Paper Award](https://www.linkedin.com/posts/xin-david-ding-5b5b618_conference-education-poms-activity-7067906007045156864-xIVs?utm_source=share&utm_medium=member_desktop). I am also interested in company diversity, sustainability, supply chain management and open to other fields in the business world. 
 
 Please feel free to reach out and connect!
 
