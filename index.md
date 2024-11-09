@@ -4,7 +4,7 @@ layout: homepage
 
 ## Short Bio
 
-Hello, and welcome to my website! I am a Ph.D. candidate in Management Science at the [Operations and Logistics Division](https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics), UBC Sauder School of Business. My advisors are [Yichuan Ding](https://www.mcgill.ca/desautels/yichuan-daniel-ding), [Mahesh Nagarajan](https://www.sauder.ubc.ca/people/mahesh-nagarajan), [Steven Shechter](https://www.sauder.ubc.ca/people/steven-shechter). 
+Hello, and welcome to my website! I earned my Ph.D. in Management Science at the [Operations and Logistics Division](https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics), UBC Sauder School of Business. I was fortunate to be advised by [Yichuan Ding](https://www.mcgill.ca/desautels/yichuan-daniel-ding), [Mahesh Nagarajan](https://www.sauder.ubc.ca/people/mahesh-nagarajan), [Steven Shechter](https://www.sauder.ubc.ca/people/steven-shechter). 
 
 **Update: I will join the [Haskayne School of Business](https://haskayne.ucalgary.ca/) at the University of Calgary as an assistant professor in July 2024.**
 
