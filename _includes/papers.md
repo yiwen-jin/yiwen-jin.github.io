@@ -34,7 +34,19 @@
   </div>
 </div>
 </li>
-  
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
+  </div>
+  <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
+    <div class="title">[5]. When Diversity Aligns: From Boardrooms to Supply Chains</div>
+    <div class="author"><strong>Yiwen Jin</strong>, Minjia Li, Jenny Li Zhang</div>
+    <div class="periodical"><em>Submitted</em></div>
+      -- <strong>Winner of $5,000 EDI Catalyst Grant of UBC Sauder School of Business</strong>
+  </div>
+</div>
+</li>
 <h4 style="margin:0 10px 0;">Accepted Papers</h4>  
   
 <li>
@@ -62,19 +74,6 @@
 </li>
   
 <h4 style="margin:0 10px 0;">Working Papers</h4>  
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
-  </div>
-  <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">[5]. Beyond tokenism: The impact of board ethnic diversity on supply chain diversification</div>
-    <div class="author">with Minjia Li, Jenny Li Zhang</div>
-    <div class="periodical"><em>Manuscript ready</em></div>
-      -- <strong>Winner of $5,000 EDI Catalyst Grant of UBC Sauder School of Business</strong>
-  </div>
-</div>
-</li>
-
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
