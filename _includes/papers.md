@@ -27,8 +27,6 @@
     <div class="author"><strong>Yiwen Jin</strong>, Yige Duan, Yichuan Ding, Mahesh Nagarajan, Garth Hunte</div>
     <div class="periodical"><em>under revision</em></div>
       -- <strong>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</strong><br>
-      -- <strong>Winner, 2021 Canadian Operational Research Society Healthcare SIG Best Paper in Statistical/Econometric Modelling</strong><br>
-      -- <strong>Winner, The 18th International Conference on Service Systems and Service Management Best Paper Award</strong>
   </div>
 </div>
 </li>  
@@ -56,8 +54,6 @@
     <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4048352">Adaptive server behavior to deviations in schedules and its consequences: Evidence from operating rooms</a></div>
     <div class="author"><strong>Yiwen Jin</strong>, Yichuan Ding, Steven Shechter, Jugpal Arneja</div>
     <div class="periodical"><em>Accepted, M&SOM</em></div>
-      -- <strong>Third Place, 2023 POMS International (China) Conference Best Student Paper Competition</strong><br>
-      -- <strong>Finalist (Top 5), 2023 Canadian Operational Research Society Healthcare SIG Graduate Student Presentation Competition</strong>
   </div>
 </div>
 </li>
