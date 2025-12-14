@@ -1,8 +1,21 @@
 <h2 id="teaching" style="margin: 20px 0px 20px;">Teaching</h2>
 
+
 <h4 style="margin:0 10px 0;">Instructor</h4>  
 <ul style="margin:0 0 5px;">
-  <li><autocolor>Instructor of COMM 204 Logistics and Operations Management, UBC Sauder School of Business</autocolor></li>
+  <li><autocolor>DATA 611 Predictive Analytics, Haskayne School of Business</autocolor></li>
+      -- Core course of the Master of Data Science program. Covers various data mining, machine learning, AI topics.<br>
+</ul>
+
+<h4 style="margin:0 10px 0;">Instructor</h4>  
+<ul style="margin:0 0 5px;">
+  <li><autocolor>OPMA 317 Fundamentals of Operations and Supply Chain Management, Haskayne School of Business</autocolor></li>
+      -- Core course of the Bachelor of Commerce program. Covers process analysis, capacity, inventory, supply chain management.<br>
+</ul>
+
+<h4 style="margin:0 10px 0;">Instructor</h4>  
+<ul style="margin:0 0 5px;">
+  <li><autocolor>COMM 204 Logistics and Operations Management, UBC Sauder School of Business</autocolor></li>
       -- Teaching Evaluation: <strong>4.8/5.0</strong>, Class size: 33<br>
       -- Winner of the 2023 UBC Paul Chwelos Memorial Graduate Scholarship of Teaching Excellence<br>
       -- Introductory course for students in the Bachelor of Commerce program. The course covers major fundamental areas in operations management, including process analysis, queueing, inventory, supply chain management.<br>
