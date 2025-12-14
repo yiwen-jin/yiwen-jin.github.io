@@ -39,7 +39,6 @@
     <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5016160">When Diversity Aligns: From Boardrooms to Supply Chains</a></div>
     <div class="author"><strong>Yiwen Jin</strong>, Minjia Li, Jenny Li Zhang</div>
     <div class="periodical"><em>under revision</em></div>
-      -- <strong>Winner of $5,000 EDI Catalyst Grant of UBC Sauder School of Business</strong>
   </div>
 </div>
 </li>
