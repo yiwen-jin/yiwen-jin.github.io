@@ -16,8 +16,8 @@
 <h4 style="margin:0 10px 0;">Instructor</h4>  
 <ul style="margin:0 0 5px;">
   <li><autocolor>COMM 204 Logistics and Operations Management, UBC Sauder School of Business</autocolor></li>
-      -- Teaching Evaluation: <strong>4.8/5.0</strong>, Class size: 33<br>
-      -- Winner of the 2023 UBC Paul Chwelos Memorial Graduate Scholarship of Teaching Excellence<br>
+     % -- Teaching Evaluation: <strong>4.8/5.0</strong>, Class size: 33<br>
+     % -- Winner of the 2023 UBC Paul Chwelos Memorial Graduate Scholarship of Teaching Excellence<br>
       -- Introductory course for students in the Bachelor of Commerce program. The course covers major fundamental areas in operations management, including process analysis, queueing, inventory, supply chain management.<br>
 </ul>
 
