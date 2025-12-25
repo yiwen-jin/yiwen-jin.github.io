@@ -32,6 +32,6 @@ My CV can be found [here](assets/files/yiwen_cv.pdf). Please feel free to reach 
 
 {% include_relative _includes/services.md %}
 
-
+      - <strong>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</strong><br>
 
 
