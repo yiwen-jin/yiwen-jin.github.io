@@ -13,7 +13,7 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4048352">Adaptive server behavior to deviations in schedules and its consequences: Evidence from operating rooms</a></div>
+    <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4048352">Adaptive behaviour of service providers to deviations in schedules and its consequences: Evidence from operating rooms</a></div>
     <div class="author"><strong>Yiwen Jin</strong>, Yichuan Ding, Steven Shechter, Jugpal Arneja</div>
     <div class="periodical"><em>Forthcoming, M&SOM</em></div>
   </div>
