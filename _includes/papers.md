@@ -6,7 +6,7 @@
 
 
 
-<h4 style="margin:0 10px 0;">Accepted Papers</h4>  
+<h4 style="margin:0 10px 0;">Accepted Papers/Publications</h4>  
 
 <li>
 <div class="pub-row">
@@ -44,14 +44,14 @@
 </div>
 </li>
 
-<h4 style="margin:0 10px 0;">Papers Under Review/Revision</h4>  
+<h4 style="margin:0 10px 0;">Under Review/Revision</h4>  
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">Does Task Switching Cost Lives? Evidence from Transplantation</a></div>
+    <div class="title">Does Task Switching Cost Lives? Evidence from Transplantation</div>
     <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler</div>
     <div class="periodical"><em>under review, Nature Human Behaviour</em></div>
   </div>
@@ -66,7 +66,7 @@
     <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3756677">The cost of task switching: Evidence from emergency departments</a></div>
     <div class="author"><strong>Yiwen Jin</strong>, Yige Duan, Yichuan Ding, Mahesh Nagarajan, Garth Hunte</div>
     <div class="periodical"><em>under revision</em></div>
-      -- <strong>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</strong><br>
+      - <strong>Winner, 2023 POMS College of Healthcare Operations Management Best Paper Award</strong><br>
   </div>
 </div>
 </li>  
