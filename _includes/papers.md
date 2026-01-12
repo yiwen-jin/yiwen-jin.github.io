@@ -6,14 +6,14 @@
 
 
 
-<h4 style="margin:0 10px 0;">Accepted Papers/Publications</h4>  
+<h4 style="margin:0 10px 0;">Publications/Accepted Papers</h4>  
 
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">Does Task Switching Cost Lives? Evidence from Transplantation</div>
+    <div class="title">Causal Evidence of Task-Switching Cost in Organ Transplantation</div>
     <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler</div>
     <div class="periodical"><em>Conditionally accepted, Nature Human Behaviour</em></div>
   </div>
