@@ -14,7 +14,7 @@
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title">Causal Evidence of Task-Switching Cost in Organ Transplantation</div>
-    <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler</div>
+    <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler (2026)</div>
     <div class="periodical"><em>Conditionally accepted, Nature Human Behaviour</em></div>
   </div>
 </div>
@@ -26,7 +26,7 @@
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title"><a href="https://pubsonline.informs.org/doi/10.1287/msom.2023.0200">Adaptive Behavior of Service Providers to Schedule Deviations and Its Consequences: Evidence from Operating Rooms</a></div>
-    <div class="author"><b>Jin, Y.</b>, Ding, Y., Shechter, S. M., & Arneja, J. S.</div>
+    <div class="author"><b>Jin, Y.</b>, Ding, Y., Shechter, S. M., & Arneja, J. S. (2026)</div>
     <div class="periodical"><em>Manufacturing & Service Operations Management</em>, 0(0).</div>
   </div>
 </div>
@@ -39,7 +39,7 @@
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title"><a href="https://journals.sagepub.com/doi/10.1177/2292550319880921">High-risk plastic surgery: An analysis of 108,303 cases from the American College of Surgeons National Surgical Quality Improvement Program (ACS NSQIP)</a></div>
-    <div class="author">Wan, M., Zhang, J.X., Ding, Y., <b>Jin, Y.</b>, Bedford, J., Nagarajan, M., Bucevska, M., Courtemanche, D.J. and Arneja, J.S.</div>
+    <div class="author">Wan, M., Zhang, J.X., Ding, Y., <b>Jin, Y.</b>, Bedford, J., Nagarajan, M., Bucevska, M., Courtemanche, D.J. and Arneja, J.S. (2020)</div>
     <div class="periodical"><em>Plastic Surgery</em>, 28(1), pp.57-66.</div>
   </div>
 </div>
@@ -51,7 +51,7 @@
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7209891/">Do microsurgical outcomes differ based on which specialty does the operation? A NSQIP analysis</a></div>
-    <div class="author">Zhang, J.X., Wan, M., Ding, Y., <b>Jin, Y.</b>, Nagarajan, M., Courtemanche, D.J., Bedford, J. and Arneja, J.S.</div>
+    <div class="author">Zhang, J.X., Wan, M., Ding, Y., <b>Jin, Y.</b>, Nagarajan, M., Courtemanche, D.J., Bedford, J. and Arneja, J.S. (2020)</div>
     <div class="periodical"><em>Plastic and Reconstructive Surgery Global Open</em>, 8(4).</div>
   </div>
 </div>
