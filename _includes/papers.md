@@ -13,12 +13,25 @@
   <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
   </div>
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4048352">Adaptive behaviour of service providers to deviations in schedules and its consequences: Evidence from operating rooms</a></div>
-    <div class="author"><strong>Yiwen Jin</strong>, Yichuan Ding, Steven Shechter, Jugpal Arneja</div>
-    <div class="periodical"><em>Forthcoming, M&SOM</em></div>
+    <div class="title">Does Task Switching Cost Lives? Evidence from Transplantation</div>
+    <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler</div>
+    <div class="periodical"><em>Conditional accepted, Nature Human Behaviour</em></div>
   </div>
 </div>
 </li>
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
+  </div>
+  <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
+    <div class="title"><a href="https://pubsonline.informs.org/doi/10.1287/msom.2023.0200">Adaptive Behavior of Service Providers to Schedule Deviations and Its Consequences: Evidence from Operating Rooms</a></div>
+    <div class="author"><b>Jin, Y.</b>, Ding, Y., Shechter, S. M., & Arneja, J. S.</div>
+    <div class="periodical"><em>Manufacturing & Service Operations Management</em>, 0(0).</div>
+  </div>
+</div>
+</li>
+
 
 <li>
 <div class="pub-row">
@@ -45,18 +58,6 @@
 </li>
 
 <h4 style="margin:0 10px 0;">Under Review/Revision</h4>  
-
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: static;padding-right: 15px;padding-left: 5px;">
-  </div>
-  <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
-    <div class="title">Does Task Switching Cost Lives? Evidence from Transplantation</div>
-    <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler</div>
-    <div class="periodical"><em>under review, Nature Human Behaviour</em></div>
-  </div>
-</div>
-</li>
 
 <li>
 <div class="pub-row">
