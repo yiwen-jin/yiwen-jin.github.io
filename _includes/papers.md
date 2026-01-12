@@ -15,7 +15,7 @@
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title">Does Task Switching Cost Lives? Evidence from Transplantation</div>
     <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler</div>
-    <div class="periodical"><em>Conditional accepted, Nature Human Behaviour</em></div>
+    <div class="periodical"><em>Conditionally accepted, Nature Human Behaviour</em></div>
   </div>
 </div>
 </li>
