@@ -15,7 +15,7 @@
   <div class="col-sm-9" style="position: static;padding-right: 15px;padding-left: 10px;">
     <div class="title">Causal Evidence of Task-Switching Cost in Organ Transplantation</div>
     <div class="author">Jiayi Liu, <strong>Yiwen Jin</strong>, Joel T. Adler (2026)</div>
-    <div class="periodical"><em>Conditionally accepted, Nature Human Behaviour</em></div>
+    <div class="periodical"><em>Conditionally Accepted, Nature Human Behaviour</em></div>
   </div>
 </div>
 </li>
