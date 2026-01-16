@@ -15,8 +15,6 @@ Feel free to reach out and connect!
 
 {% include_relative _includes/teaching.md %}
 
-{% include_relative _includes/talks.md %}
-
 {% include_relative _includes/awards.md %}
 
 {% include_relative _includes/services.md %}
