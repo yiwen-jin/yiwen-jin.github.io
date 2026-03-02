@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yiwen Jin, Ph.D. - Assistant Professor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-dark: #1a1a1a;
+      --color-light: #ffffff;
+      --color-accent: #4a6fa5;
+      --color-accent-light: #e8f0f8;
+      --color-text-gray: #555555;
+      --color-text-light: #777777;
+      --color-border: #e0e0e0;
+      --color-bg-gray: #f5f5f5;
+      --color-warm-beige: #f8f6f3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: var(--color-dark);
+      background-color: var(--color-light);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      background: transparent;
+    }
+
+    nav.scrolled {
+      height: 64px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--color-dark);
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    nav.scrolled .logo {
+      transform: scale(0.9);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-gray);
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-dark);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background: var(--color-accent);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateX(-50%);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 10px 20px;
+      background: var(--color-accent);
+      color: white;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--color-dark);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-color: var(--color-warm-beige);
+      position: relative;
+      overflow: hidden;
+      padding: 120px 24px 80px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      opacity: 0.3;
+      background: 
+        radial-gradient(circle at 20% 80%, var(--color-accent-light) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(74, 111, 165, 0.1) 0%, transparent 40%);
+    }
+
+    .hero-container {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 56px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--color-dark);
+    }
+
+    .hero-content h1 span {
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--color-text-light);
+    }
+
+    .hero-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      color: var(--color-dark);
+    }
+
+    .hero-affiliation {
+      font-size: 18px;
+      color: var(--color-text-gray);
+      margin-bottom: 8px;
+    }
+
+    .hero-institution {
+      font-size: 16px;
+      color: var(--color-text-light);
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: white;
+      border-radius: 9999px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 14px;
+      color: var(--color-text-gray);
+      transition: all 0.3s;
+    }
+
+    .hero-btn:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+      color: var(--color-dark);
+    }
+
+    .hero-btn svg {
+      width: 16px;
+      height: 16px;
+      color: var(--color-accent);
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 9999px;
+      font-size: 14px;
+      color: var(--color-text-gray);
+      transition: all 0.3s;
+    }
+
+    .hero-link:hover {
+      background: white;
+      transform: translateY(-2px);
+      color: var(--color-dark);
+    }
+
+    .hero-link svg {
+      width: 14px;
+      height: 14px;
+      color: var(--color-accent);
+    }
+
+    .hero-line {
+      width: 96px;
+      height: 2px;
+      background: var(--color-accent);
+      margin-top: 48px;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .image-container {
+      position: relative;
+      width: 320px;
+      height: 448px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      background: linear-gradient(to bottom right, var(--color-accent-light), var(--color-bg-gray));
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-light);
+    }
+
+    .image-placeholder-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .image-placeholder-icon svg {
+      width: 48px;
+      height: 48px;
+      color: var(--color-accent);
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .scroll-indicator-inner {
+      width: 24px;
+      height: 40px;
+      border: 2px solid var(--color-border);
+      border-radius: 9999px;
+      display: flex;
+      justify-content: center;
+      padding-top: 8px;
+    }
+
+    .scroll-indicator-inner::after {
+      content: '';
+      width: 6px;
+      height: 12px;
+      background: var(--color-accent);
+      border-radius: 9999px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
+    /* Sections */
+    section {
+      padding: 96px 24px;
+    }
+
+    .section-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 48px;
+      color: var(--color-dark);
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--color-text-light);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .bg-gray {
+      background-color: var(--color-bg-gray);
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image-inner {
+      width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+      background: linear-gradient(to bottom right, white, var(--color-accent-light));
+    }
+
+    .about-image-frame {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid rgba(74, 111, 165, 0.2);
+      border-radius: 16px;
+      z-index: -1;
+    }
+
+    .about-text {
+      color: var(--color-text-gray);
+      margin-bottom: 24px;
+      line-height: 1.8;
+    }
+
+    .about-text a {
+      color: var(--color-accent);
+      font-weight: 500;
+    }
+
+    .about-text a:hover {
+      text-decoration: underline;
+    }
+
+    .research-interests {
+      margin-top: 32px;
+    }
+
+    .research-interests h3 {
+      font-size: 20px;
+      margin-bottom: 24px;
+      color: var(--color-dark);
+    }
+
+    .interests-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .interest-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .interest-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
+    }
+
+    .interest-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--color-accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.3s;
+    }
+
+    .interest-card:hover .interest-icon {
+      background: var(--color-accent);
+    }
+
+    .interest-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--color-accent);
+      transition: all 0.3s;
+    }
+
+    .interest-card:hover .interest-icon svg {
+      color: white;
+    }
+
+    .interest-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-dark);
+      transition: color 0.3s;
+    }
+
+    .interest-card:hover h4 {
+      color: var(--color-accent);
+    }
+
+    /* Research Section */
+    .research-category {
+      margin-bottom: 64px;
+    }
+
+    .research-category-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .research-category-header svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-accent);
+    }
+
+    .research-category-header h3 {
+      font-size: 24px;
+      color: var(--color-dark);
+    }
+
+    .publication-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .publication-card {
+      padding: 24px;
+      background: white;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .publication-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+      border-color: rgba(74, 111, 165, 0.3);
+    }
+
+    .publication-card:hover h4 {
+      color: var(--color-accent);
+    }
+
+    .publication-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .publication-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-dark);
+      flex: 1;
+      transition: color 0.3s;
+    }
+
+    .publication-meta {
+      font-size: 14px;
+      color: var(--color-text-light);
+      margin-bottom: 4px;
+    }
+
+    .publication-venue {
+      font-size: 14px;
+      color: var(--color-text-gray);
+    }
+
+    .publication-venue em {
+      font-style: italic;
+      color: var(--color-dark);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .status-accepted {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    .status-published {
+      background: var(--color-accent-light);
+      color: var(--color-accent);
+    }
+
+    .status-revision {
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+
+    .papers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .paper-card {
+      padding: 24px;
+      background: var(--color-bg-gray);
+      border-radius: 12px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .paper-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .paper-card:hover h4 {
+      color: var(--color-accent);
+    }
+
+    .paper-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-dark);
+      margin-bottom: 8px;
+      transition: color 0.3s;
+    }
+
+    .paper-card p {
+      font-size: 14px;
+      color: var(--color-text-light);
+      margin-bottom: 12px;
+    }
+
+    .paper-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: var(--color-accent);
+    }
+
+    /* Teaching Section */
+    .teaching-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .teaching-subheader {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .teaching-subheader svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-accent);
+    }
+
+    .teaching-subheader h3 {
+      font-size: 24px;
+      color: var(--color-dark);
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    .course-card {
+      position: relative;
+      padding: 24px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .course-card:hover {
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
+    }
+
+    .course-card:hover h4 {
+      color: var(--color-accent);
+    }
+
+    .course-code {
+      display: inline-flex;
+      padding: 4px 12px;
+      background: var(--color-accent-light);
+      color: var(--color-accent);
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      transition: all 0.3s;
+    }
+
+    .course-card:hover .course-code {
+      background: var(--color-accent);
+      color: white;
+    }
+
+    .course-icon {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--color-bg-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .course-card:hover .course-icon {
+      background: var(--color-accent-light);
+    }
+
+    .course-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--color-text-light);
+      transition: color 0.3s;
+    }
+
+    .course-card:hover .course-icon svg {
+      color: var(--color-accent);
+    }
+
+    .course-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-dark);
+      margin-bottom: 8px;
+      padding-right: 48px;
+      transition: color 0.3s;
+    }
+
+    .course-card .institution {
+      font-size: 14px;
+      color: var(--color-text-light);
+      margin-bottom: 12px;
+    }
+
+    .course-card .description {
+      font-size: 14px;
+      color: var(--color-text-gray);
+      line-height: 1.6;
+    }
+
+    /* Awards Section */
+    .awards-category {
+      margin-bottom: 48px;
+    }
+
+    .awards-category h3 {
+      font-size: 20px;
+      margin-bottom: 24px;
+      color: var(--color-dark);
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 48px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--color-border);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: white;
+      border: 2px solid var(--color-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .timeline-dot svg {
+      width: 14px;
+      height: 14px;
+      color: var(--color-accent);
+    }
+
+    .timeline-card {
+      padding: 20px;
+      background: white;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .timeline-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border-color: rgba(74, 111, 165, 0.3);
+      transform: translateX(8px);
+    }
+
+    .timeline-card:hover h4 {
+      color: var(--color-accent);
+    }
+
+    .timeline-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-year {
+      padding: 4px 12px;
+      background: var(--color-dark);
+      color: white;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .timeline-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-dark);
+      transition: color 0.3s;
+    }
+
+    .timeline-badge {
+      display: inline-flex;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+
+    .badge-winner {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .badge-finalist {
+      background: #f3e8ff;
+      color: #7c3aed;
+    }
+
+    .badge-default {
+      background: var(--color-accent-light);
+      color: var(--color-accent);
+    }
+
+    .grants-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .grant-card {
+      padding: 24px;
+      background: var(--color-bg-gray);
+      border-radius: 12px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .grant-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transform: translateY(-4px);
+    }
+
+    .grant-card:hover h4 {
+      color: var(--color-accent);
+    }
+
+    .grant-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .grant-icon-year {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .grant-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grant-icon svg {
+      width: 18px;
+      height: 18px;
+      color: var(--color-accent);
+    }
+
+    .grant-year {
+      font-size: 14px;
+      color: var(--color-text-light);
+    }
+
+    .grant-amount {
+      padding: 4px 12px;
+      background: #dcfce7;
+      color: #15803d;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .grant-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-dark);
+      margin-bottom: 4px;
+      transition: color 0.3s;
+    }
+
+    .grant-card p {
+      font-size: 14px;
+      color: var(--color-text-light);
+    }
+
+    /* Services Section */
+    .service-card {
+      padding: 32px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 24px;
+      transition: box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .service-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: var(--color-accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-icon svg {
+      width: 28px;
+      height: 28px;
+      color: var(--color-accent);
+    }
+
+    .service-header h3 {
+      font-size: 24px;
+      color: var(--color-dark);
+    }
+
+    .service-header p {
+      font-size: 14px;
+      color: var(--color-text-light);
+    }
+
+    .journals-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .journal-item {
+      padding: 16px;
+      background: var(--color-bg-gray);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--color-text-gray);
+      transition: all 0.3s;
+    }
+
+    .journal-item:hover {
+      background: var(--color-accent-light);
+      color: var(--color-accent);
+    }
+
+    .conference-org {
+      padding: 32px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .conference-org-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .conference-org-header h3 {
+      font-size: 24px;
+      color: var(--color-dark);
+    }
+
+    .conference-org-header p {
+      font-size: 14px;
+      color: var(--color-text-light);
+    }
+
+    .conference-section {
+      margin-bottom: 24px;
+    }
+
+    .conference-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .conference-section h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-light);
+      margin-bottom: 12px;
+    }
+
+    .cluster-item {
+      padding: 16px;
+      background: var(--color-bg-gray);
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .cluster-item:hover {
+      background: var(--color-accent-light);
+    }
+
+    .cluster-item p {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-dark);
+      transition: color 0.3s;
+    }
+
+    .cluster-item:hover p {
+      color: var(--color-accent);
+    }
+
+    .cluster-item span {
+      font-size: 12px;
+      color: var(--color-text-light);
+    }
+
+    .session-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .session-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: var(--color-bg-gray);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--color-text-gray);
+      transition: all 0.3s;
+    }
+
+    .session-tag:hover {
+      background: var(--color-accent-light);
+      color: var(--color-accent);
+    }
+
+    .session-tag span:first-child {
+      font-weight: 500;
+    }
+
+    .session-tag span:last-child {
+      font-size: 12px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 80px 24px;
+      background: var(--color-dark);
+      position: relative;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+      background-size: 200% 100%;
+      animation: gradientShift 8s linear infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+
+    .footer-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-content h2 {
+      font-size: 36px;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .footer-content > p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 32px;
+    }
+
+    .footer-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 9999px;
+      color: white;
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+
+    .footer-btn:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+
+    .footer-btn svg {
+      width: 18px;
+      height: 18px;
+      color: var(--color-accent);
+    }
+
+    .footer-divider {
+      width: 96px;
+      height: 1px;
+      background: rgba(255,255,255,0.2);
+      margin: 0 auto 32px;
+    }
+
+    .footer-copyright {
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .hero-image {
+        justify-content: center;
+        order: -1;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .courses-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .papers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grants-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .journals-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .hero-content h1 {
+        font-size: 40px;
+      }
+
+      .interests-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .journals-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline {
+        padding-left: 40px;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+    }
+
+    /* Scroll animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-in-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">YJ</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#awards">Awards</a>
+        <a href="#services">Services</a>
+      </div>
+      <a href="#footer" class="nav-cta">Contact</a>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Yiwen Jin<span>, Ph.D.</span></h1>
+        <p class="hero-title">Assistant Professor</p>
+        <p class="hero-affiliation">Operations & Supply Chain Management</p>
+        <p class="hero-institution">Haskayne School of Business, University of Calgary</p>
+        
+        <div class="hero-buttons">
+          <a href="mailto:yiwen.jin@ucalgary.ca" class="hero-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            yiwen.jin@ucalgary.ca
+          </a>
+          <a href="mailto:ywjin37@gmail.com" class="hero-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            ywjin37@gmail.com
+          </a>
+        </div>
+        
+        <div class="hero-links">
+          <a href="#" class="hero-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            CV
+          </a>
+          <a href="https://scholar.google.com" class="hero-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            Google Scholar
+          </a>
+          <a href="https://linkedin.com" class="hero-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            LinkedIn
+          </a>
+        </div>
+        
+        <div class="hero-line"></div>
+      </div>
+      
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="profile.png" alt="Yiwen Jin" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-inner"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray">
+    <div class="section-container">
+      <h2 class="section-title fade-in">About Me</h2>
+      
+      <div class="about-grid">
+        <div class="about-image fade-in-left">
+          <div class="about-image-inner">
+            <img src="profile.png" alt="Yiwen Jin" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="about-image-frame"></div>
+        </div>
+        
+        <div>
+          <p class="about-text fade-in">
+            Hello, and welcome to my website! I am an Assistant Professor of Operations & Supply Chain Management at the Haskayne School of Business, University of Calgary. I received my Ph.D. in Management Science at the Operations and Logistics Division, UBC Sauder School of Business, where I was fortunate to be advised by <a href="https://sites.google.com/view/yichuanding/home" target="_blank">Yichuan Ding</a>, <a href="https://sites.google.com/view/maheshnagarajan/home" target="_blank">Mahesh Nagarajan</a>, and <a href="https://sites.google.com/view/stevenshechter/home" target="_blank">Steven Shechter</a>.
+          </p>
+          
+          <p class="about-text fade-in">
+            My research focuses on healthcare operations, technology, and supply chain management, using primarily empirical and queueing-based methods. My work has appeared in leading journals such as <em>Manufacturing & Service Operations Management</em> and has been recognized with multiple major paper competition winners in the field. Broadly, I also work on large-scale societal and environmental data to inform public policy and organizational decision-making, with a growing emphasis on how AI reshapes human behavior.
+          </p>
+          
+          <div class="research-interests fade-in">
+            <h3>Research Interests</h3>
+            <div class="interests-grid">
+              <div class="interest-card">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                </div>
+                <h4>Healthcare Operations</h4>
+              </div>
+              <div class="interest-card">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20"></path></svg>
+                </div>
+                <h4>Supply Chain Management</h4>
+              </div>
+              <div class="interest-card">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <h4>Data Analytics & AI</h4>
+              </div>
+              <div class="interest-card">
+                <div class="interest-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20"></path><path d="M12 2v20"></path><path d="M12 12h8"></path><path d="M12 6h5"></path><path d="M12 18h5"></path></svg>
+                </div>
+                <h4>Public Policy</h4>
+              </div>
+            </div>
+          </div>
+          
+          <p class="about-text fade-in" style="margin-top: 32px; font-style: italic;">
+            Feel free to reach out and connect!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research">
+    <div class="section-container">
+      <h2 class="section-title fade-in">Research</h2>
+      
+      <!-- Publications -->
+      <div class="research-category fade-in">
+        <div class="research-category-header">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <h3>Publications / Accepted Papers</h3>
+        </div>
+        
+        <div class="publication-list">
+          <div class="publication-card">
+            <div class="publication-header">
+              <h4>Causal Evidence of Task-Switching Cost in Organ Transplantation</h4>
+              <span class="status-badge status-accepted">Conditionally Accepted</span>
+            </div>
+            <p class="publication-meta">Jiayi Liu, Yiwen Jin, Joel T. Adler (2026)</p>
+            <p class="publication-venue"><em>Nature Human Behaviour</em></p>
+          </div>
+          
+          <div class="publication-card">
+            <div class="publication-header">
+              <h4>Adaptive Behavior of Service Providers to Schedule Deviations and Its Consequences: Evidence from Operating Rooms</h4>
+              <span class="status-badge status-published">Published</span>
+            </div>
+            <p class="publication-meta">Jin, Y., Ding, Y., Shechter, S. M., & Arneja, J. S. (2026)</p>
+            <p class="publication-venue"><em>Manufacturing & Service Operations Management</em>, 0(0)</p>
+          </div>
+          
+          <div class="publication-card">
+            <div class="publication-header">
+              <h4>High-risk plastic surgery: An analysis of 108,303 cases from the American College of Surgeons National Surgical Quality Improvement Program (ACS NSQIP)</h4>
+              <span class="status-badge status-published">Published</span>
+            </div>
+            <p class="publication-meta">Wan, M., Zhang, J.X., Ding, Y., Jin, Y., Bedford, J., Nagarajan, M., Bucevska, M., Courtemanche, D.J. and Arneja, J.S. (2020)</p>
+            <p class="publication-venue"><em>Plastic Surgery</em>, 28(1), pp.57-66</p>
+          </div>
+          
+          <div class="publication-card">
+            <div class="publication-header">
+              <h4>Do microsurgical outcomes differ based on which specialty does the operation? A NSQIP analysis</h4>
+              <span class="status-badge status-published">Published</span>
+            </div>
+            <p class="publication-meta">Zhang, J.X., Wan, M., Ding, Y., Jin, Y., Nagarajan, M., Courtemanche, D.J., Bedford, J. and Arneja, J.S. (2020)</p>
+            <p class="publication-venue"><em>Plastic and Reconstructive Surgery Global Open</em>, 8(4)</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Under Review -->
+      <div class="research-category fade-in">
+        <div class="research-category-header">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <h3>Under Review / Revision</h3>
+        </div>
+        
+        <div class="papers-grid">
+          <div class="paper-card">
+            <h4>The cost of task switching: Evidence from emergency departments</h4>
+            <p>Yiwen Jin, Yige Duan, Yichuan Ding, Mahesh Nagarajan, Garth Hunte</p>
+            <span class="paper-status">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Under Revision
+            </span>
+          </div>
+          
+          <div class="paper-card">
+            <h4>When Diversity Aligns: From Boardrooms to Supply Chains</h4>
+            <p>Yiwen Jin, Minjia Li, Jenny Li Zhang</p>
+            <span class="paper-status">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Under Revision
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Ongoing Works -->
+      <div class="research-category fade-in">
+        <div class="research-category-header">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"></path><path d="M14 9.3V1.99"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
+          <h3>Ongoing Works</h3>
+        </div>
+        
+        <div class="papers-grid">
+          <div class="paper-card" style="border: 1px dashed var(--color-border);">
+            <h4>Patient routing in emergency rooms: A polling system with switchover times and piecewise linear cost rate</h4>
+            <p>with Yichuan Ding, Mahesh Nagarajan</p>
+            <span class="status-badge status-revision">In Preparation</span>
+          </div>
+          
+          <div class="paper-card" style="border: 1px dashed var(--color-border);">
+            <h4>Coping with nurse burnout: Key drivers and operational interventions</h4>
+            <p>with Steven Shechter, Yichuan Ding, Jugpal Arneja</p>
+            <span class="status-badge status-revision">In Preparation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching Section -->
+  <section id="teaching" class="bg-gray">
+    <div class="section-container">
+      <div class="teaching-header fade-in">
+        <h2 class="section-title">Teaching</h2>
+        <p class="section-subtitle">Mentoring the next generation of business leaders and data scientists</p>
+      </div>
+      
+      <div class="teaching-subheader fade-in">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+        <h3>Instructor</h3>
+      </div>
+      
+      <div class="courses-grid fade-in">
+        <div class="course-card">
+          <span class="course-code">DATA 611</span>
+          <div class="course-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h4>Predictive Analytics</h4>
+          <p class="institution">Haskayne School of Business</p>
+          <p class="description">Core course of the Master of Data Science program. Covers various data mining, machine learning, and AI topics.</p>
+        </div>
+        
+        <div class="course-card">
+          <span class="course-code">OPMA 317</span>
+          <div class="course-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          </div>
+          <h4>Fundamentals of Operations and Supply Chain Management</h4>
+          <p class="institution">Haskayne School of Business</p>
+          <p class="description">Core course of the Bachelor of Commerce program. Covers process analysis, capacity, inventory, and supply chain management.</p>
+        </div>
+        
+        <div class="course-card">
+          <span class="course-code">COMM 204</span>
+          <div class="course-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <h4>Logistics and Operations Management</h4>
+          <p class="institution">UBC Sauder School of Business</p>
+          <p class="description">Introductory course covering major fundamental areas in operations management, including process analysis, queueing, inventory, and supply chain management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards">
+    <div class="section-container">
+      <h2 class="section-title fade-in">Awards & Grants</h2>
+      
+      <!-- Research Awards -->
+      <div class="awards-category fade-in">
+        <h3>Research Awards</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2023</span>
+              </div>
+              <h4>POMS College of Healthcare Operations Management Best Paper Award</h4>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2023</span>
+              </div>
+              <h4>POMS International (China) Conference Best Student Paper Competition</h4>
+              <span class="timeline-badge badge-default">Third Place</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2023</span>
+              </div>
+              <h4>The 18th International Conference on Service Systems and Service Management Best Paper Award</h4>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2023</span>
+              </div>
+              <h4>Canadian Operational Research Society Healthcare SIG Graduate Student Presentation Competition</h4>
+              <span class="timeline-badge badge-finalist">Finalist (Top 5)</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2021</span>
+              </div>
+              <h4>Canadian Operational Research Society Healthcare SIG Best Paper in Statistical Methods/Econometric Modelling</h4>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2023</span>
+              </div>
+              <h4>UBC Paul Chwelos Memorial Graduate Scholarship of Teaching Excellence</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Grants -->
+      <div class="awards-category fade-in">
+        <h3>Grants</h3>
+        <div class="grants-grid">
+          <div class="grant-card">
+            <div class="grant-header">
+              <div class="grant-icon-year">
+                <div class="grant-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+                <span class="grant-year">2023</span>
+              </div>
+              <span class="grant-amount">$5,000</span>
+            </div>
+            <h4>Equity, Diversity, and Inclusion (EDI) Catalyst Grant, UBC</h4>
+            <p>Co-applicant</p>
+          </div>
+          
+          <div class="grant-card">
+            <div class="grant-header">
+              <div class="grant-icon-year">
+                <div class="grant-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+                <span class="grant-year">2021</span>
+              </div>
+              <span class="grant-amount">$12,000</span>
+            </div>
+            <h4>CIDER Small Grants in Innovative Data, UBC</h4>
+            <p>Co-applicant</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray">
+    <div class="section-container">
+      <h2 class="section-title fade-in">Services</h2>
+      
+      <!-- Reviewer -->
+      <div class="service-card fade-in">
+        <div class="service-header">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          </div>
+          <div>
+            <h3>Reviewer</h3>
+            <p>Peer review for leading academic journals</p>
+          </div>
+        </div>
+        
+        <div class="journals-grid">
+          <div class="journal-item">Manufacturing and Service Operations Management</div>
+          <div class="journal-item">Production and Operations Management</div>
+          <div class="journal-item">Health Care Management Science</div>
+          <div class="journal-item">Service Science</div>
+          <div class="journal-item">Omega</div>
+        </div>
+      </div>
+      
+      <!-- Conference Organization -->
+      <div class="conference-org fade-in">
+        <div class="conference-org-header">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <div>
+            <h3>Conference Organization</h3>
+            <p>Cluster and session chair roles</p>
+          </div>
+        </div>
+        
+        <div class="conference-section">
+          <h4>Cluster Chairs</h4>
+          <div class="cluster-item">
+            <p>Queuing and Applied Probability Track</p>
+            <span>CORS 2025/2026</span>
+          </div>
+        </div>
+        
+        <div class="conference-section">
+          <h4>Session Chairs</h4>
+          <div class="session-tags">
+            <span class="session-tag"><span>POMS</span><span>2026</span></span>
+            <span class="session-tag"><span>INFORMS Healthcare</span><span>2021</span></span>
+            <span class="session-tag"><span>INFORMS</span><span>2022</span></span>
+            <span class="session-tag"><span>INFORMS Healthcare</span><span>2023</span></span>
+            <span class="session-tag"><span>INFORMS</span><span>2023</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <h2>Thank you for visiting</h2>
+      <p>Feel free to reach out and connect</p>
+      
+      <div class="footer-buttons">
+        <a href="mailto:yiwen.jin@ucalgary.ca" class="footer-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          yiwen.jin@ucalgary.ca
+        </a>
+        <a href="mailto:ywjin37@gmail.com" class="footer-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          ywjin37@gmail.com
+        </a>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <p class="footer-copyright">&copy; 2025 Yiwen Jin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .fade-in-left').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
