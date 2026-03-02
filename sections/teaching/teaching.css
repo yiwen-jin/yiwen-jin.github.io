@@ -1,0 +1,130 @@
+/* ========================================
+   Teaching Section Styles
+   ======================================== */
+
+.teaching-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.teaching-subheader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.teaching-subheader svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent);
+}
+
+.teaching-subheader h3 {
+  font-size: 24px;
+  color: var(--color-dark);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.course-card {
+  position: relative;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.course-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+.course-card:hover h4 {
+  color: var(--color-accent);
+}
+
+.course-code {
+  display: inline-flex;
+  padding: 4px 12px;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+
+.course-card:hover .course-code {
+  background: var(--color-accent);
+  color: white;
+}
+
+.course-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--color-bg-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.course-card:hover .course-icon {
+  background: var(--color-accent-light);
+}
+
+.course-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-text-light);
+  transition: color 0.3s;
+}
+
+.course-card:hover .course-icon svg {
+  color: var(--color-accent);
+}
+
+.course-card h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+  padding-right: 48px;
+  transition: color 0.3s;
+}
+
+.course-card .institution {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-bottom: 12px;
+}
+
+.course-card .description {
+  font-size: 14px;
+  color: var(--color-text-gray);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,181 @@
+/* ========================================
+   Services Section Styles
+   ======================================== */
+
+.service-card {
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s;
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--color-accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-accent);
+}
+
+.service-header h3 {
+  font-size: 24px;
+  color: var(--color-dark);
+}
+
+.service-header p {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.journals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.journal-item {
+  padding: 16px;
+  background: var(--color-bg-gray);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--color-text-gray);
+  transition: all 0.3s;
+}
+
+.journal-item:hover {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.conference-org {
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.conference-org-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.conference-org-header h3 {
+  font-size: 24px;
+  color: var(--color-dark);
+}
+
+.conference-org-header p {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.conference-section {
+  margin-bottom: 24px;
+}
+
+.conference-section:last-child {
+  margin-bottom: 0;
+}
+
+.conference-section h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-light);
+  margin-bottom: 12px;
+}
+
+.cluster-item {
+  padding: 16px;
+  background: var(--color-bg-gray);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.cluster-item:hover {
+  background: var(--color-accent-light);
+}
+
+.cluster-item p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dark);
+  transition: color 0.3s;
+}
+
+.cluster-item:hover p {
+  color: var(--color-accent);
+}
+
+.cluster-item span {
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+
+.session-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.session-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: var(--color-bg-gray);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--color-text-gray);
+  transition: all 0.3s;
+}
+
+.session-tag:hover {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.session-tag span:first-child {
+  font-weight: 500;
+}
+
+.session-tag span:last-child {
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .journals-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .journals-grid {
+    grid-template-columns: 1fr;
+  }
+}
