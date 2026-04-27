@@ -155,3 +155,15 @@
     grid-template-columns: 1fr;
   }
 }
+/* Publication link styling */
+.publication-card h4 a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+  color: inherit;
+}
+
+.publication-card h4 a:hover {
+  text-decoration-style: solid;
+  color: var(--color-accent);
+}
